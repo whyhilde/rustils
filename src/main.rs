@@ -10,5 +10,6 @@ fn main() -> Result<()> {
 
     match cli.command {
         cli::Commands::Colors => commands::colors::run(),
+        cli::Commands::UnzipAll(args) => commands::unzip_all::run(args),
     }
 }
